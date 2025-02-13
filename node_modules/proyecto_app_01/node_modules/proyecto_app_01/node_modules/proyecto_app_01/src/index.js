@@ -18,7 +18,7 @@ return()=>clearTimeout(timer)
 return(
 <Suspense fallback={
         <div className="loading">
-            drian
+            
         </div>}>
 {show?<App />: <div className="loading">
     </div>}
