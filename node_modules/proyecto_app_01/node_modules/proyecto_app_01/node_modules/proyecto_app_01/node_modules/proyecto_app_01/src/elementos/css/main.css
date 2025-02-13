@@ -1,0 +1,31 @@
+.main{position: absolute;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:70%;
+    width: 80%;
+    background-color: transparent;
+    border: 5px solid rgb(94, 3, 3);
+    border-radius: 15%;
+    overflow-y: hidden;
+    bottom: 0%;
+    background: radial-gradient(rgb(218, 211, 211),rgb(116, 110, 110),rgb(77, 76, 76));
+    
+}
+.fila{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-items:space-between ;
+}
+.column{
+    
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-items:space-between ;
+}

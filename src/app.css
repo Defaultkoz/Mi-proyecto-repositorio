@@ -1,0 +1,99 @@
+.app{
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height:100%;
+    background:radial-gradient(rgb(7, 7, 7) 80%,gray 100%)
+}
+.app>header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:60px;
+}
+.loading{
+    position: relative;
+    width: 110px;
+    height: 30px;
+    background-color: red;
+    animation: ap 1s linear;
+}
+.loading::after{
+    background-color: red;
+    position: absolute;
+    left: 80px;
+    top:-60px;
+    content: " ";
+    width: 40px;
+    height: 160px;
+    transform:rotateZ(-25deg)
+    skewY(20deg) ;
+    animation: ap 2s linear;
+   }
+   
+.loading::before{
+    transform:rotateZ(25deg) 
+    skewY(-20deg);
+    background-color: red;
+    left: -10px;
+    top:-60px;
+    position:absolute;
+    content: " ";
+    width: 40px;
+    height: 160px;
+    animation: ap 2.5s linear;
+   }
+
+   @keyframes ap {
+    from{
+      background-color: black;
+    }
+    to{
+        background-color: red;
+    }
+    
+   }
+
+   .viewer{
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:linear-gradient(to right,black 80%,rgb(36, 35, 35) 90%,gray 100%);
+    position: fixed;
+    width: 80%;
+    height: 20%;
+    top: 0%;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 4px outset rgb(124, 9, 9);
+    border-left:  4px outset rgb(124, 9, 9);
+    border-right: 4px inset rgb(124, 9, 9) ;
+   }
+   .deslizar{
+    color: antiquewhite;
+    animation: des 1s linear;
+   }
+   @keyframes des {
+    from{
+        opacity:0 ;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1 ;
+        transform:translateY(0px);
+    }
+    
+   }
+   .no-deslizar{
+    color: antiquewhite;
+   }
+
+   .column{
+    
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-items:space-between ;
+}

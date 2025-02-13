@@ -1,0 +1,18 @@
+
+.tecla{
+    user-select: none;
+    background-color: white;
+    border:1px solid black;
+    width: 30px;
+    height: 120px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.tecla:active{
+    background-color: rgb(70, 71, 73);
+}
+.black{
+    border:1px solid white;
+    background-color: black;
+}

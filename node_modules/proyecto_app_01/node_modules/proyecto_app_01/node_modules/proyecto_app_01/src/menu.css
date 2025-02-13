@@ -1,0 +1,57 @@
+.menu{
+    height: 180px;
+    width:70px ;
+    background:linear-gradient(to bottom, rgb(24, 23, 23) 60%,rgb(54, 54, 54) 80%,rgb(161, 160, 160) 100%);
+    position: fixed;
+    left: 3%;
+    top: 0%;
+    height: auto;
+    box-shadow:0px 10px 2px 0px rgb(161, 160, 160) ;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 30px;
+    z-index: 200;
+
+}
+
+.menu>button{
+    font-size:80%;
+    height: 60px;
+    border: 2px solid black;
+    background-color: transparent;
+cursor: pointer;
+font-weight: bolder;
+}
+
+.icon{top:40px;
+    left: 60px;
+    position: fixed;
+    width: 35px;
+    height: 10px;
+    background-color: red;
+    
+   }
+.icon::after{
+    background-color: red;
+    position: absolute;
+    left: 30px;
+    top:-30px;
+    content: " ";
+    width: 12px;
+    height: 60px;
+    transform:rotateZ(-25deg)
+    skewY(20deg) ;
+    
+   }
+   
+.icon::before{
+    transform:rotateZ(25deg) 
+    skewY(-20deg);
+    background-color: red;
+    left: -5px;
+    top:-30px;
+    position:absolute;
+    content: " ";
+    width: 12px;
+    height: 60px;
+   
+   }
